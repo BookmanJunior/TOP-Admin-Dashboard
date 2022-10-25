@@ -25,11 +25,12 @@ body {
   grid-template-rows: 1fr 5fr;
   height: 100vh;
   background-color: var(--catskill-white);
-  text-align: center;
 }
 
 .header {
   background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .side-bar {
