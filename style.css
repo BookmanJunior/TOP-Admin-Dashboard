@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 
-.main-nav {
+.header {
   background-color: var(--primary-color);
   grid-column: 2;
 }
