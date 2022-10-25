@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #1992d4;
+  --content-bg-color: #e2e8f0;
+  --primary-font-color: #000000;
+  --secondary-font-color: #636363;
+  --projects-border-color: #f0b429;
+}
+
+/* General styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+  text-align: center;
+}
+
+.main-nav {
+  background-color: var(--primary-color);
+  grid-column: 2;
+}
+
+.side-bar {
+  background-color: var(--secondary-color);
+  grid-row: 1 / 3;
+}
+
+.content {
+  background-color: var(--content-bg-color);
+  grid-row: 2 / 3;
+}
