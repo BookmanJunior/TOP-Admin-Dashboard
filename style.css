@@ -150,9 +150,16 @@ input[type="search"]:focus::placeholder {
   text-decoration: none;
 }
 
+/* Link styles */
+
 .main-links a:visited,
 .helper-links a:visited {
   color: var(--primary-color);
+}
+
+.main-links a:hover,
+.helper-links a:hover {
+  filter: brightness(90%);
 }
 
 /* Utilities */
