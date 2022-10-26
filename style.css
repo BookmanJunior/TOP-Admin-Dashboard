@@ -37,7 +37,7 @@ body {
   grid-template-columns: minmax(250px, 2fr) 1fr;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   padding: 1em 3em;
-  row-gap: 1em;
+  row-gap: 1.5em;
 }
 
 .side-bar {
@@ -63,7 +63,7 @@ input[type="search"] {
   outline: none;
   border: none;
   background-color: var(--catskill-white);
-  border-radius: 12px;
+  border-radius: 1em;
   padding-inline: 1em;
   line-height: 2.2;
   width: 80%;
