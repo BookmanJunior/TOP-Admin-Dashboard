@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
   --primary-color: #ffffff;
   --secondary-color: #1992d4;
@@ -5,6 +7,7 @@
   --content-font-color: #636363;
   --catskill-white: #e2e8f0;
   --fuel-yellow: #f0b429;
+  --font-size-m: 1rem;
 }
 
 /* General styles */
@@ -17,6 +20,7 @@
 
 body {
   height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -30,7 +34,10 @@ body {
 .header {
   background-color: var(--primary-color);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: minmax(250px, 2fr) 1fr;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 1em 3em;
+  row-gap: 1em;
 }
 
 .side-bar {
@@ -40,4 +47,99 @@ body {
 
 .content {
   grid-row: 2 / 3;
+}
+
+/* Header styles */
+
+.search-bar-wrapper,
+.profile-greeting-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+input[type="search"] {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: var(--catskill-white);
+  border-radius: 12px;
+  padding-inline: 1em;
+  line-height: 2.2;
+  width: 80%;
+}
+
+input[type="search"]:focus::placeholder {
+  color: transparent;
+}
+
+.profile-settings-wrapper,
+.content-update-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.greeting-message {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+}
+
+.profile-settings-wrapper p {
+  font-size: var(--font-size-m);
+}
+
+.profile-greeting-wrapper p {
+  font-size: 1.5rem;
+}
+
+.header button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding-block: 10px;
+  width: 5.5rem;
+  border-radius: 16px;
+  font-weight: 700;
+}
+
+.header button:hover {
+  filter: brightness(95%);
+}
+
+/* Utilities */
+
+.icon {
+  height: 24px;
+}
+
+.avatar {
+  border-radius: 50%;
+  background-color: var(--fuel-yellow);
+  flex-shrink: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.avatar-small {
+  height: 34px;
+  width: 34px;
+}
+
+.avatar-medium {
+  height: 64px;
+  width: 64px;
+}
+
+.font-bold {
+  font-weight: 700;
 }
