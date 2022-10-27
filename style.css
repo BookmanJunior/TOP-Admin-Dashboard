@@ -24,7 +24,6 @@ body {
 }
 
 .wrapper {
-  background-color: var(--catskill-white);
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
@@ -33,6 +32,7 @@ body {
 
 .header {
   background-color: var(--primary-color);
+  position: relative;
   display: grid;
   grid-template-columns: minmax(250px, 2fr) 1fr;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -49,6 +49,7 @@ body {
 }
 
 .content {
+  background-color: var(--catskill-white);
   grid-row: 2 / 3;
 }
 
