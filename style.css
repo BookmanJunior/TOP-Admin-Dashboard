@@ -178,6 +178,12 @@ input[type="search"]:focus::placeholder {
 .cards .title {
   font-size: 1.2rem;
   font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.card-content {
+  font-size: 0.8rem;
+  color: var(--content-font-color);
 }
 
 /* Link styles */
@@ -223,6 +229,8 @@ input[type="search"]:focus::placeholder {
 .card {
   background-color: var(--primary-color);
   border-radius: 12px;
+  border-left: 8px solid var(--fuel-yellow);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   padding: 1em;
 }
 
