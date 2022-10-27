@@ -151,6 +151,14 @@ input[type="search"]:focus::placeholder {
 .content {
   background-color: var(--catskill-white);
   grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+}
+
+.projects-section {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
 }
 
 /* Link styles */
