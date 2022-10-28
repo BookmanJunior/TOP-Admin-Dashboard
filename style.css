@@ -195,6 +195,18 @@ input[type="search"]:focus::placeholder {
   padding-block: 8px;
 }
 
+/* Announcement and Trending section styles */
+
+.announcements-section {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+
+.announcements-card {
+  background-color: var(--primary-color);
+  border-radius: 12px;
+}
+
 /* Link styles */
 
 .main-links a:visited,
