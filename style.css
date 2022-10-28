@@ -176,14 +176,23 @@ input[type="search"]:focus::placeholder {
 }
 
 .cards .title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 5px;
+  padding-top: 1rem;
 }
 
 .card-content {
   font-size: 0.8rem;
   color: var(--content-font-color);
+}
+
+.action-buttons {
+  align-self: flex-end;
+  cursor: pointer;
+  display: flex;
+  gap: 1em;
+  padding-block: 8px;
 }
 
 /* Link styles */
@@ -232,6 +241,9 @@ input[type="search"]:focus::placeholder {
   border-left: 8px solid var(--fuel-yellow);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .font-bold {
