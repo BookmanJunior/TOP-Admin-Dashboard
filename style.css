@@ -154,7 +154,7 @@ input[type="search"]:focus::placeholder {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1em;
-  gap: 1em;
+  gap: 2em;
 }
 
 .projects-section {
@@ -167,7 +167,7 @@ input[type="search"]:focus::placeholder {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1em;
+  gap: 2em;
 }
 
 .section-title {
