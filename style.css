@@ -249,6 +249,22 @@ input[type="search"]:focus::placeholder {
   align-self: center;
 }
 
+.trending-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.trending-topic {
+  display: flex;
+  gap: 15px;
+}
+
+.trending-link {
+  color: var(--content-font-color);
+  font-size: 0.8rem;
+}
+
 /* Link styles */
 
 .main-links a:visited,
@@ -280,8 +296,8 @@ input[type="search"]:focus::placeholder {
 }
 
 .avatar-small {
-  height: 34px;
-  width: 34px;
+  height: 42px;
+  width: 42px;
 }
 
 .avatar-medium {
